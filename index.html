@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul class="nav-list" id="nav-list">
+    <li><a href="index.html">Inicio</a> </li>
+    <li><a href="Moda Urbana y Deportes.html">Moda Urbana y Deportes</a></li>
+    <li><a href="entretenimiento y cultura.html">Entretenimiento y Cultura</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+  <header class="header">
+    <img src="img/logo (2).png" alt="Logo ALSTUDI" class="logo">
+  
+    <p>Productos</p>
+  </header>
+
+  <main class="grid-container">
+    <a href="entretenimiento y cultura.html" class="categoria">
+      <img src="entretenimientoycultura/musica/cuadrooscuroextasiswos.png" alt="entretenimiento y cultura">
+      <h2>Moda Urbana y Deportes</h2>
+    </a>
+    <a href="moda urbana y deportes.html" class="categoria">
+      <img src="img/Entretenimientoycultura.jpg" alt="moda urbana y deportes">
+      <h2>Entretenimiento y Cultura</h2>
+    </a>
+    <a href="Personalizados.html" class="categoria">
+      <img src="img/Personalizados.jpg" alt="perzonalizados">
+      <h2>Perzonalizados</h2>
+    </a>
+  </main>
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+</script>
+<footer class="footer">
+  <p>&copy; 2025 ALStudi.</p>
+  <p>Instagram: @Alstudiart | WhatsApp: 2804953307</p>
+</footer>
+</body>
+</html>
